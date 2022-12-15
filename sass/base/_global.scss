@@ -1,0 +1,44 @@
+body {
+  font-family: var(--mainFont);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  @extend %visuallyHidden;
+}
+
+.section {
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  // padding: 0 39px;
+  width: 100vw;
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+    padding: 0 20px;
+  }
+
+  @include desktop {
+    width: 1200px;
+    padding: 0 15px;
+  }
+
+  outline: 1px solid salmon;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
